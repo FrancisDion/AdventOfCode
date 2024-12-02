@@ -1,4 +1,4 @@
-const numbersText = ["
+//list of numbers
     77221   93653
     61169   27995
     49546   69782
@@ -998,25 +998,4 @@ const numbersText = ["
     62591   16739
     53735   79935
     14454   69804
-    19976   46609"];
-
-
-
-const numbers = numbersText
-    .trim() // Remove leading/trailing whitespace
-    .split("\n") // Split by new line
-    .map(Number); // Convert each line into a number
-
-const array1 = [];
-const array2 = [];
-
-for (let i = 0; i < numbers.length; i++) {
-    if (i % 2 === 0) {
-        array1.push(numbers[i]);
-    } else {
-        array2.push(numbers[i]);
-    }
-}
-
-console.log("Array 1:", array1);
-console.log("Array 2:", array2);
+    19976   46609
